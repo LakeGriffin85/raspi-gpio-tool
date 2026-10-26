@@ -1,0 +1,15 @@
+# Keep the normal user's shell preferences.
+if [ -f "$HOME/.bashrc" ]; then
+    source "$HOME/.bashrc"
+fi
+printf '\nRaspberry Pi GPIO Tool – terminal\n\n'
+if [ -x /usr/bin/pinout ]; then
+    /usr/bin/pinout
+fi
+printf '\nRead-only commands:\n'
+printf '  pinout              Show physical header pinout\n'
+printf '  pinctrl get 17      Read BCM GPIO17 state\n'
+printf '  pinctrl get         Read all pin states\n'
+printf '\nOpen the graphical workshop:\n'
+printf '  /usr/bin/python3 "%s/gpio_gui.py"\n' "$GPIO_TOOLS_DIR"
+printf '\nGPIO signalling: 3.3 V. Physical pin and BCM GPIO numbers differ.\n\n'
