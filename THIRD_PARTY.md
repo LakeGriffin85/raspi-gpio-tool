@@ -10,5 +10,6 @@ copied into this repository or the release archives:
 
 The optional Gertboard schematic and explanations refer to the linked
 [Gertboard user manual](https://www.farnell.com/datasheets/1683444.pdf) and the
-manufacturer pages linked from each in-app region. The manual PDF and reference
-photographs are not distributed here. Links do not change those materials' licences.
+manufacturer pages linked from each in-app region. The manual PDF and original RAW files are not distributed here. The project
+maintainer approved one hardware reference photo and an application screenshot;
+see [Image provenance](docs/IMAGES.md). Links do not change those materials' licences.

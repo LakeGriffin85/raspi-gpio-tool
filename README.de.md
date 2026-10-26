@@ -1,8 +1,20 @@
 # Raspberry Pi GPIO Tool – Deutsch
 
+![Raspberry Pi GPIO Tool – grafische GPIO-Werkstatt](docs/assets/project-banner.svg)
+
+[**Downloads**](https://github.com/LakeGriffin85/raspi-gpio-tool/releases/latest) ·
+[**English**](README.md) · [**Gertboard**](docs/GERTBOARD.md) · [**Mitmachen**](CONTRIBUTING.md)
+
 Eine grafische GPIO-Werkstatt für den **Raspberry Pi 5** mit Live-Steckerbild,
 mehreren unabhängig aktiven Pins und einer Oberfläche auf Deutsch und Englisch.
 Das Gertboard ist ein optionales Modul. [English README](README.md)
+
+## Die Oberfläche
+
+![GPIO-Werkstatt 2.7.0 mit Live-Steckerbild und Pin-Bedienung](docs/assets/app-screenshot.png)
+
+*Hier ist die englische Oberfläche zu sehen. Die Sprache lässt sich in der App
+wechseln. Ein angezeigter HIGH-Pegel bedeutet noch nicht, dass die App den Pin aktiviert hat.*
 
 ## Installation
 
@@ -51,6 +63,29 @@ Ohne das optionale Atlasmodul bleibt die GPIO-Grundansicht nutzbar.
 
 Das Gertboard-Modul zeigt J1-Pins 1–26, 17 Pi-Signale, 24 Boardbereiche und
 LED-/Tasteranleitungen. [Gertboard-Details](docs/GERTBOARD.md)
+
+## Orientierung und Aufbau
+
+![Physische Pin-Nummern, BCM-GPIOs und der 26-polige Gertboard-Anschluss](docs/assets/pin-orientation.svg)
+
+Der gelbe Punkt markiert **physischen Pin 1**. „J1“ bezeichnet den ganzen Stecker;
+die Position dieses Aufdrucks ist keine Pin-1-Markierung.
+
+<p align="center">
+  <img src="docs/assets/gertboard-on-pi.jpg" alt="Gertboard über dem Raspberry Pi 5 mit sichtbarer Steckerleiste und gelbem Pin-1-Punkt" width="820">
+</p>
+
+*Freigegebenes Referenzfoto aus dem Projekt, ohne identifizierende Metadaten.
+Es zeigt die mechanische Anordnung und ist kein vollständiger Verdrahtungsplan.*
+Die [Gertboard-Anleitung](docs/GERTBOARD.md) enthält zusätzlich eine schematische
+Übersicht der Funktionsbereiche.
+
+## Mitmachen
+
+Alle können das öffentliche Projekt herunterladen oder forken. Änderungen lassen
+sich in einem eigenen Fork committen und per Pull Request vorschlagen. Direkt in
+dieses Repository schreiben können nur Personen mit erteiltem Schreibrecht.
+Der kurze Ablauf steht in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Grenzen
 

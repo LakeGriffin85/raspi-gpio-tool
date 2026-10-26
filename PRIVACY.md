@@ -2,7 +2,9 @@
 
 This repository starts with a new history. It does not contain the personal
 workshop repository, administration scripts, network configuration, logs,
-backups, credentials, private photos or manufacturer PDF manuals.
+backups, credentials, unreviewed private photos or manufacturer PDF manuals.
+The maintainer-approved hardware photo and screenshot have identifying metadata
+removed; original RAW files are not included.
 
 The initial public commit uses the maintainer's GitHub handle and GitHub noreply
 email address. Changing the author in a later commit would not remove identity

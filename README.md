@@ -1,11 +1,36 @@
 # Raspberry Pi GPIO Tool
 
+![Raspberry Pi GPIO Tool — live pins, English/German and optional Gertboard](docs/assets/project-banner.svg)
+
+[![Test and build](https://github.com/LakeGriffin85/raspi-gpio-tool/actions/workflows/test.yml/badge.svg)](https://github.com/LakeGriffin85/raspi-gpio-tool/actions/workflows/test.yml)
+
+[**Download**](https://github.com/LakeGriffin85/raspi-gpio-tool/releases/latest) ·
+[**Install**](#install-from-source) ·
+[**Deutsch**](README.de.md) ·
+[**Gertboard guide**](docs/GERTBOARD.md) ·
+[**Contribute**](CONTRIBUTING.md)
+
 A desktop GPIO workshop for **Raspberry Pi 5**: inspect the live 40-pin header,
 understand why a pin is unavailable, and explicitly activate inputs or outputs.
 The interface is available in **English and German**. An optional **Gertboard**
 module adds a 26-pin view, a connector atlas and LED/button instructions.
 
-[Deutsche Anleitung](README.de.md) · [Gertboard guide](docs/GERTBOARD.md)
+## See it in action
+
+![GPIO Workshop 2.7.0 showing the live 40-pin header, ownership colours and pin controls](docs/assets/app-screenshot.png)
+
+*English interface running on a Raspberry Pi. The selected GPIO is being observed;
+reading a HIGH level does not mean the app has claimed that pin.*
+
+## Choose your edition
+
+| Edition | Live GPIO workshop | English + German | Gertboard atlas and 26-pin view |
+| --- | --- | --- | --- |
+| **Base** | Yes | Yes | Not installed |
+| **With Gertboard** | Yes | Yes | Optional module included |
+
+Both editions use the same GPIO controller and ownership checks.
+[Get the release ZIPs](https://github.com/LakeGriffin85/raspi-gpio-tool/releases/latest).
 
 ## Features
 
@@ -79,6 +104,27 @@ Demo mode uses simulated pins only. The optional atlas file is not required for
 the base view. GPIO diagnostics are local to `$XDG_CACHE_HOME/raspi-gpio`
 (normally `~/.cache/raspi-gpio`); review logs before sharing them.
 
+## Header orientation
+
+![Physical pin numbers, BCM GPIO numbers and the 26-pin Gertboard connection](docs/assets/pin-orientation.svg)
+
+The yellow mark identifies **physical pin 1**. `J1` is a connector label; the text
+position does not identify which contact is pin 1. The diagram is a static pinout,
+not a measurement of current pin levels.
+
+## Gertboard on a Raspberry Pi
+
+<p align="center">
+  <img src="docs/assets/gertboard-on-pi.jpg" alt="Legacy Gertboard fitted above a Raspberry Pi 5, showing the header and yellow pin-1 reference" width="820">
+</p>
+
+*Maintainer-contributed reference photo with identifying metadata removed. It
+shows physical placement, not a complete or electrically verified wiring plan.*
+
+The optional atlas explains which connectors belong to the Pi, buffers, ATmega,
+analogue section and power drivers. See the [illustrated Gertboard guide](docs/GERTBOARD.md)
+for the schematic map and the numbering differences.
+
 ## Electrical scope
 
 GPIO signalling is **3.3 V**. GPIO inputs read digital HIGH/LOW, not analogue
@@ -113,8 +159,15 @@ This is not a claim of validation on every desktop, circuit or operating system.
 Only explicit runtime files, instructions and the licence enter those packages.
 It validates the embedded Python/JSON and shell syntax without running the installer.
 
+## Contributing
+
+Anyone can download or fork the public project. To propose a change, create a
+branch in your fork and open a pull request. Direct pushes to this repository
+require write access. See [CONTRIBUTING.md](CONTRIBUTING.md) for the short workflow.
+
 ## Licence
 
 [MIT](LICENSE). External libraries and linked manufacturer manuals retain their
-own licences. No library sources, manufacturer PDF manuals or personal photographs
-are bundled. See [THIRD_PARTY.md](THIRD_PARTY.md) for reference links.
+own licences. No library sources, manufacturer PDF manuals or private RAW files
+are bundled. The approved screenshot and hardware photo are described in
+[Image provenance](docs/IMAGES.md). See [THIRD_PARTY.md](THIRD_PARTY.md) for reference links.

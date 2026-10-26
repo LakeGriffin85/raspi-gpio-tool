@@ -1,5 +1,27 @@
 # Optional Gertboard module
 
+[Main README](../README.md) · [Deutsche Anleitung](../README.de.md)
+
+## Physical placement
+
+![Gertboard fitted above a Raspberry Pi 5 with the connector and yellow pin-1 reference visible](assets/gertboard-on-pi.jpg)
+
+This project reference photo shows the mechanical arrangement. It is not a
+complete wiring diagram or certification of every connection. Use the pin-1
+mark and the manual when checking your own board.
+
+## Find a functional area
+
+![Schematic map of the Gertboard connectors and functional blocks](assets/gertboard-map.svg)
+
+The same board model generates this static diagram and the interactive in-app
+atlas. In the app, select a region to read its connector labels and function.
+The dots in this diagram are schematic contact marks, not measured LED states.
+
+## Header numbering
+
+![40 physical positions and the first 26 used by Gertboard J1](assets/pin-orientation.svg)
+
 This module documents the legacy board marked **21 Oct 2012**, using the revision 2
 Gertboard user manual and manufacturer chip documentation. It adds a schematic
 connector atlas, the cropped 26-pin J1 view and LED/button instructions. It does
