@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Private security report / Sicherheitslücke
+    url: https://github.com/LakeGriffin85/raspi-gpio-tool/security/advisories/new
+    about: Report vulnerabilities privately. Do not publish exploit details in an issue.

@@ -5,6 +5,10 @@ it and create a fork. A fork is your own copy, where you can create branches and
 commits. A pull request proposes those changes to this project; it does not
 immediately change the upstream code. Direct pushes require granted write access.
 
+Please follow the [code of conduct](CODE_OF_CONDUCT.md). For security vulnerabilities,
+use the [private reporting channel](SECURITY.md). Accessibility limitations and
+reporting guidance are described in [ACCESSIBILITY.md](ACCESSIBILITY.md).
+
 1. Fork the project and create a branch for one focused change.
 2. Run the existing tests using simulated GPIOs.
 3. Explain what changed and how it was checked.

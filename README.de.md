@@ -87,6 +87,9 @@ sich in einem eigenen Fork committen und per Pull Request vorschlagen. Direkt in
 dieses Repository schreiben können nur Personen mit erteiltem Schreibrecht.
 Der kurze Ablauf steht in [CONTRIBUTING.md](CONTRIBUTING.md).
 
+[Verhaltensregeln](CODE_OF_CONDUCT.md) · [Sicherheitsmeldungen](SECURITY.md) ·
+[Barrierefreiheit und bekannte Grenzen](ACCESSIBILITY.md)
+
 ## Grenzen
 
 GPIO-Logik arbeitet mit 3,3 V. GPIOs messen digitale Pegel, keine analogen Spannungen.

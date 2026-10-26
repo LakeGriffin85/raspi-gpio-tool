@@ -14,7 +14,9 @@ COMMON = ('gpio_core.py', 'gpio_gui.py', 'gpio_header.py', 'gpio_support.py',
           'gpio_i18n.py', 'gpio_settings.py', 'gpio_locale_en.json',
           'gpio-terminal.sh', 'terminal-bashrc')
 ADDON = ('gpio_gertboard.py',)
-DOCUMENTS = ('README.md', 'README.de.md', 'LICENSE', 'VERSION', 'docs/GERTBOARD.md', 'THIRD_PARTY.md', 'CONTRIBUTING.md', 'docs/IMAGES.md',
+DOCUMENTS = ('README.md', 'README.de.md', 'LICENSE', 'VERSION', 'docs/GERTBOARD.md',
+             'THIRD_PARTY.md', 'PRIVACY.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md',
+             'SECURITY.md', 'ACCESSIBILITY.md', 'docs/IMAGES.md',
              'docs/assets/project-banner.svg', 'docs/assets/app-screenshot.png',
              'docs/assets/gertboard-on-pi.jpg', 'docs/assets/pin-orientation.svg',
              'docs/assets/gertboard-map.svg')

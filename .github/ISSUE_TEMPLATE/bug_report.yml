@@ -1,0 +1,39 @@
+name: Bug report / Fehlermeldung
+description: Report unexpected behaviour or an accessibility barrier.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or German is welcome. Remove passwords, personal paths, network addresses and identifying image metadata before posting. For a security vulnerability, use the private link on the issue chooser instead.
+  - type: input
+    id: version
+    attributes:
+      label: App version and edition
+      description: For example, 2.7.0, base or Gertboard edition.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Pi model, OS version, local or remote desktop. For display problems, add scaling and relevant assistive software.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include BCM GPIO and physical pin numbers if relevant. A demo-mode reproduction is especially helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Optional diagnostics or screenshots
+      description: Review and redact logs and screenshots before sharing. Do not attach original RAW photos.

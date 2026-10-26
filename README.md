@@ -165,6 +165,9 @@ Anyone can download or fork the public project. To propose a change, create a
 branch in your fork and open a pull request. Direct pushes to this repository
 require write access. See [CONTRIBUTING.md](CONTRIBUTING.md) for the short workflow.
 
+[Code of conduct](CODE_OF_CONDUCT.md) · [Security policy](SECURITY.md) ·
+[Accessibility](ACCESSIBILITY.md)
+
 ## Licence
 
 [MIT](LICENSE). External libraries and linked manufacturer manuals retain their

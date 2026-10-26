@@ -1,0 +1,25 @@
+name: Feature request / Idee
+description: Suggest an improvement to the GPIO workshop.
+body:
+  - type: markdown
+    attributes:
+      value: English or German is welcome. Please keep each request focused on one improvement.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the task or problem behind the idea.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Explain the behaviour you would find helpful, including any alternatives.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional context
+      description: Mention relevant hardware or sketches. Keep personal details and private configuration out of attachments.
